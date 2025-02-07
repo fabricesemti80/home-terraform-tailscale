@@ -56,4 +56,4 @@ prod/infra/RAW/**
 .svn/**
 .svn/wc.db
 prod/role-assignment.ps1
-**secret.tfvars
+**secrets.tfvars
