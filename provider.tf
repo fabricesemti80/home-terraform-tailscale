@@ -8,18 +8,18 @@ terraform {
 }
 
 provider "tailscale" {
-  oauth_client_id     = var.tailscale_oauth_client_id
-  oauth_client_secret = var.tailscale_oauth_client_secret
+  api_key = var.tailscale_api_key
+  tailnet = var.tailnet
 }
 
-variable "tailscale_oauth_client_id" {
-  description = "Tailscale OAuth client ID"
+variable "tailscale_api_key" {
+  description = "Tailscale API key"
   type        = string
   sensitive   = true
 }
 
-variable "tailscale_oauth_client_secret" {
-  description = "Tailscale OAuth client secret"
+variable "tailnet" {
+  description = "Tailscale Tailnet name"
   type        = string
   sensitive   = true
 }
